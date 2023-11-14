@@ -88,10 +88,10 @@ function Dashboard({ }: Props): ReactElement {
             title="جمر الجمرات"
             connections={["HRM", "MIN"]}
             connectionId="JMR"
-          />
-
-          {/* one arrow pointing from  left side to right side from center orign */}
-          <div className="absolute  -top-[0px] -right-1/2 transform -translate-x-[0px] translate-y-[50px] flex flex-col items-center text-[#445564] font-bold">
+          >
+            <>
+            {/* one arrow pointing from  left side to right side from center orign */}
+          <div className="absolute  -top-[0px] -right-1/2 transform -translate-x-[0px] translate-y-[0px] flex flex-col items-center text-[#445564] font-bold">
             <p>0</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -107,9 +107,8 @@ function Dashboard({ }: Props): ReactElement {
               />
             </svg>
           </div>
-
-          {/* two arrow pointing between both stations svg with posintion absotue */}
-          <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center pointer-events-none">
+            {/* two arrow pointing between both stations svg with posintion absotue */}
+            <div className="absolute -bottom-8 left-10 flex justify-center items-center pointer-events-none">
             <div className="flex flex-row justify-center items-center text-xs text-[#445564] font-bold">
               <p>0</p>
               <svg
@@ -143,6 +142,13 @@ function Dashboard({ }: Props): ReactElement {
               </svg>
             </div>
           </div>
+          </>
+
+          </Station>
+
+          
+
+        
 
           <Station
             code="MIN"
@@ -150,8 +156,10 @@ function Dashboard({ }: Props): ReactElement {
             distance={1000}
             connections={["ARF", "JMR", "HRM"]}
             connectionId="MIN"
-          />
-          <div className="absolute top-[70px] left-[100px] w-full h-full flex justify-center items-center text-[#445564]  flex-col font-bold ">
+          >
+            <>
+            {/* arrow */}
+            <div className="absolute top-[0px] left-[130px]  flex justify-center items-center text-[#445564]  flex-col font-bold ">
             {/* one arrow pointing from  left side to right side from center orign */}
             <p>0</p>
             <svg
@@ -169,7 +177,7 @@ function Dashboard({ }: Props): ReactElement {
             </svg>
           </div>
           {/* down arrow */}
-          <div className="absolute -bottom-4 left-[50px] flex flex-col items-center justify-center text-[#445564] font-bold">
+          <div className="absolute top-[130px] left-[50px] flex flex-col items-center justify-center text-[#445564] font-bold">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="376"
@@ -184,9 +192,21 @@ function Dashboard({ }: Props): ReactElement {
             </svg>
             <span>0</span>
           </div>
+          </>
+            </Station>
+          
 
-          {/* arrow pointing on top diagionally */}
-          <div className="flex flex-col absolute top-[10px] -right-1/2 transform translate-x-[0px] translate-y-[150px]  items-center text-[#445564] font-bold justify-center   -rotate-45">
+        </div>
+        <div className=" relative flex flex-col  h-[80%] justify-evenly items-center">
+          <Station
+            distance={11650}
+            code="HRM"
+            title="المسجد الحرام"
+            connections={["MIN", "JMR"]}
+            connectionId="HRM"
+          >
+            {/* arrow pointing on top diagionally */}
+          <div className="flex flex-col absolute top-[90px] left-[-80px]  items-center text-[#445564] font-bold justify-center   -rotate-45">
             <span>0</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -202,15 +222,7 @@ function Dashboard({ }: Props): ReactElement {
               />
             </svg>
           </div>
-        </div>
-        <div className=" relative flex flex-col  h-[80%] justify-evenly items-center">
-          <Station
-            distance={11650}
-            code="HRM"
-            title="المسجد الحرام"
-            connections={["MIN", "JMR"]}
-            connectionId="HRM"
-          />
+            </Station>
 
           <Station
             code="ARF"
@@ -218,9 +230,9 @@ function Dashboard({ }: Props): ReactElement {
             distance={43434}
             connections={["MIN", "MUZ"]}
             connectionId="ARF"
-          />
-
-          <div className="absolute top-[240px] left-[130px]   flex justify-center items-center flex-col font-bold text-[#445564]">
+          >
+{/* arrow right */}
+<div className="absolute top-[0px] left-[130px]   flex justify-center items-center flex-col font-bold text-[#445564]">
             <p>0</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -236,6 +248,9 @@ function Dashboard({ }: Props): ReactElement {
               />
             </svg>
           </div>
+            </Station>
+
+        
         </div>
         <div className="flex flex-col  h-[80%] justify-evenly items-center">
           <Station
@@ -253,15 +268,15 @@ function Dashboard({ }: Props): ReactElement {
             connectionId="MUZ"
           />
         </div>
-        <div className="flex flex-col  h-[60%] justify-start items-center relative">
+        <div className="flex flex-col  h-[80%] justify-evenly items-center ">
           <Station
             code="INT"
             title="حجاج الداخل"
             distance={1875}
             connections={["ASM"]}
             connectionId="INT"
-          />
-          <div className="absolute -left-[50px]  text-[#445564] flex flex-col items-center font-bold ">
+          >
+            <div className="absolute -top-0 -left-[60px]  text-[#445564] flex flex-col items-center font-bold ">
             <p>--</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -277,7 +292,10 @@ function Dashboard({ }: Props): ReactElement {
               />
             </svg>
           </div>
-          <div></div>
+            </Station>
+          <div className="h-[136px] w-[120px]"></div>
+          
+          {/* <div></div> */}
         </div>
       </div>
 
@@ -355,12 +373,14 @@ const Station = ({
   title,
   connections,
   connectionId,
+  children,
 }: {
   distance: number;
   code: string;
   title: string;
   connections: string[];
   connectionId: string;
+  children?: ReactElement
 }) => {
   const [open, setOpen] = useState(false);
   return (
@@ -370,7 +390,7 @@ const Station = ({
         <DropdownMenuTrigger>
           <div
             id={connectionId}
-            className={`flex flex-col justify-center items-center w-[120px] `}
+            className={`flex flex-col justify-center items-center w-[120px] relative`}
           >
             <div className=" flex w-[80px] h-[80px] bg-[#445564] rounded-full justify-center items-center hover:bg-[#0da2b2] cursor-pointer">
               <p className=" font-bold text-xl">{distance}</p>
@@ -379,6 +399,7 @@ const Station = ({
               <p className="text-white text-sm ">{code}</p>
               <p className="text-white text-sm ">{title}</p>
             </div>
+            {children}
           </div>
         </DropdownMenuTrigger>
         <DropdownMenuContent>
