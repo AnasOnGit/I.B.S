@@ -90,65 +90,65 @@ function Dashboard({ }: Props): ReactElement {
             connectionId="JMR"
           >
             <>
-            {/* one arrow pointing from  left side to right side from center orign */}
-          <div className="absolute  -top-[0px] -right-1/2 transform -translate-x-[0px] translate-y-[0px] flex flex-col items-center text-[#445564] font-bold">
-            <p>0</p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="56"
-              height="56"
-              fill="currentColor"
-              className="bi bi-arrow-right text-[#445564]"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fillRule="evenodd"
-                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-              />
-            </svg>
-          </div>
-            {/* two arrow pointing between both stations svg with posintion absotue */}
-            <div className="absolute -bottom-8 left-10 flex justify-center items-center pointer-events-none">
-            <div className="flex flex-row justify-center items-center text-xs text-[#445564] font-bold">
-              <p>0</p>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                className="text-[#445564] font-bold bi bi-arrow-down"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
-                />
-              </svg>
-            </div>
-            <div className="flex flex-row justify-center items-center text-xs text-[#445564] font-bold">
-              <p>0</p>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                className="text-[#445564] font-bold bi bi-arrow-up"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"
-                />
-              </svg>
-            </div>
-          </div>
-          </>
+              {/* one arrow pointing from  left side to right side from center orign */}
+              <div className="absolute  -top-[0px] -right-1/2 transform -translate-x-[0px] translate-y-[0px] flex flex-col items-center text-[#445564] font-bold">
+                <p>0</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="56"
+                  height="56"
+                  fill="currentColor"
+                  className="bi bi-arrow-right text-[#445564]"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                  />
+                </svg>
+              </div>
+              {/* two arrow pointing between both stations svg with posintion absotue */}
+              <div className="absolute -bottom-8 left-10 flex justify-center items-center pointer-events-none">
+                <div className="flex flex-row justify-center items-center text-xs text-[#445564] font-bold">
+                  <p>0</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    className="text-[#445564] font-bold bi bi-arrow-down"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
+                    />
+                  </svg>
+                </div>
+                <div className="flex flex-row justify-center items-center text-xs text-[#445564] font-bold">
+                  <p>0</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    className="text-[#445564] font-bold bi bi-arrow-up"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </>
 
           </Station>
 
-          
 
-        
+
+
 
           <Station
             code="MIN"
@@ -158,43 +158,43 @@ function Dashboard({ }: Props): ReactElement {
             connectionId="MIN"
           >
             <>
-            {/* arrow */}
-            <div className="absolute top-[0px] left-[130px]  flex justify-center items-center text-[#445564]  flex-col font-bold ">
-            {/* one arrow pointing from  left side to right side from center orign */}
-            <p>0</p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="56"
-              height="56"
-              fill="currentColor"
-              className="bi bi-arrow-right text-[#445564]"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fillRule="evenodd"
-                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-              />
-            </svg>
-          </div>
-          {/* down arrow */}
-          <div className="absolute top-[130px] left-[50px] flex flex-col items-center justify-center text-[#445564] font-bold">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="376"
-              height="56"
-              viewBox="0 0 2091 107"
-              fill="none"
-            >
-              <path
-                d="M44.3891 1.61091C42.2412 -0.536971 38.7588 -0.536971 36.6109 1.61091L1.60913 36.6127C-0.538757 38.7606 -0.538757 42.243 1.60913 44.3909C3.75701 46.5388 7.23942 46.5388 9.3873 44.3909L40.5 13.2782L71.6127 44.3909C73.7606 46.5388 77.243 46.5388 79.3909 44.3909C81.5388 42.243 81.5388 38.7606 79.3909 36.6127L44.3891 1.61091ZM2069.75 63.0152L2073.84 66.6985L2073.84 66.6985L2069.75 63.0152ZM1040 95.5L511 95.5V106.5L1040 106.5V95.5ZM511 95.5L257.5 95.5V106.5L511 106.5V95.5ZM257.5 95.5L116.5 95.5V106.5L257.5 106.5V95.5ZM46 25V5.5H35V25H46ZM1558 95.5L1040 95.5V106.5L1558 106.5V95.5ZM1819 95.5L1558 95.5V106.5L1819 106.5V95.5ZM2081.92 41.3167L2065.67 59.3318L2073.84 66.6985L2090.08 48.6833L2081.92 41.3167ZM1984.35 95.5L1819 95.5V106.5L1984.35 106.5V95.5ZM2065.67 59.3318C2044.91 82.3566 2015.36 95.5 1984.35 95.5V106.5C2018.47 106.5 2050.99 92.0363 2073.84 66.6985L2065.67 59.3318ZM116.5 95.5C77.5639 95.5 46 63.9361 46 25H35C35 70.0112 71.4888 106.5 116.5 106.5V95.5Z"
-                fill="#445564"
-              />
-            </svg>
-            <span>0</span>
-          </div>
-          </>
-            </Station>
-          
+              {/* arrow */}
+              <div className="absolute top-[0px] left-[130px]  flex justify-center items-center text-[#445564]  flex-col font-bold ">
+                {/* one arrow pointing from  left side to right side from center orign */}
+                <p>0</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="56"
+                  height="56"
+                  fill="currentColor"
+                  className="bi bi-arrow-right text-[#445564]"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                  />
+                </svg>
+              </div>
+              {/* down arrow */}
+              <div className="absolute top-[130px] left-[50px] flex flex-col items-center justify-center text-[#445564] font-bold">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="376"
+                  height="56"
+                  viewBox="0 0 2091 107"
+                  fill="none"
+                >
+                  <path
+                    d="M44.3891 1.61091C42.2412 -0.536971 38.7588 -0.536971 36.6109 1.61091L1.60913 36.6127C-0.538757 38.7606 -0.538757 42.243 1.60913 44.3909C3.75701 46.5388 7.23942 46.5388 9.3873 44.3909L40.5 13.2782L71.6127 44.3909C73.7606 46.5388 77.243 46.5388 79.3909 44.3909C81.5388 42.243 81.5388 38.7606 79.3909 36.6127L44.3891 1.61091ZM2069.75 63.0152L2073.84 66.6985L2073.84 66.6985L2069.75 63.0152ZM1040 95.5L511 95.5V106.5L1040 106.5V95.5ZM511 95.5L257.5 95.5V106.5L511 106.5V95.5ZM257.5 95.5L116.5 95.5V106.5L257.5 106.5V95.5ZM46 25V5.5H35V25H46ZM1558 95.5L1040 95.5V106.5L1558 106.5V95.5ZM1819 95.5L1558 95.5V106.5L1819 106.5V95.5ZM2081.92 41.3167L2065.67 59.3318L2073.84 66.6985L2090.08 48.6833L2081.92 41.3167ZM1984.35 95.5L1819 95.5V106.5L1984.35 106.5V95.5ZM2065.67 59.3318C2044.91 82.3566 2015.36 95.5 1984.35 95.5V106.5C2018.47 106.5 2050.99 92.0363 2073.84 66.6985L2065.67 59.3318ZM116.5 95.5C77.5639 95.5 46 63.9361 46 25H35C35 70.0112 71.4888 106.5 116.5 106.5V95.5Z"
+                    fill="#445564"
+                  />
+                </svg>
+                <span>0</span>
+              </div>
+            </>
+          </Station>
+
 
         </div>
         <div className=" relative flex flex-col  h-[80%] justify-evenly items-center">
@@ -206,23 +206,23 @@ function Dashboard({ }: Props): ReactElement {
             connectionId="HRM"
           >
             {/* arrow pointing on top diagionally */}
-          <div className="flex flex-col absolute top-[90px] left-[-80px]  items-center text-[#445564] font-bold justify-center   -rotate-45">
-            <span>0</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="56"
-              height="56"
-              fill="currentColor"
-              className="bi bi-arrow-left text-[#445564]"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fillRule="evenodd"
-                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 1 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"
-              />
-            </svg>
-          </div>
-            </Station>
+            <div className="flex flex-col absolute top-[90px] left-[-80px]  items-center text-[#445564] font-bold justify-center   -rotate-45">
+              <span>0</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="56"
+                height="56"
+                fill="currentColor"
+                className="bi bi-arrow-left text-[#445564]"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 1 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"
+                />
+              </svg>
+            </div>
+          </Station>
 
           <Station
             code="ARF"
@@ -231,26 +231,26 @@ function Dashboard({ }: Props): ReactElement {
             connections={["MIN", "MUZ"]}
             connectionId="ARF"
           >
-{/* arrow right */}
-<div className="absolute top-[0px] left-[130px]   flex justify-center items-center flex-col font-bold text-[#445564]">
-            <p>0</p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="56"
-              height="56"
-              fill="currentColor"
-              className="bi bi-arrow-right text-[#445564]"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fillRule="evenodd"
-                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-              />
-            </svg>
-          </div>
-            </Station>
+            {/* arrow right */}
+            <div className="absolute top-[0px] left-[130px]   flex justify-center items-center flex-col font-bold text-[#445564]">
+              <p>0</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="56"
+                height="56"
+                fill="currentColor"
+                className="bi bi-arrow-right text-[#445564]"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                />
+              </svg>
+            </div>
+          </Station>
 
-        
+
         </div>
         <div className="flex flex-col  h-[80%] justify-evenly items-center">
           <Station
@@ -277,24 +277,24 @@ function Dashboard({ }: Props): ReactElement {
             connectionId="INT"
           >
             <div className="absolute -top-0 -left-[60px]  text-[#445564] flex flex-col items-center font-bold ">
-            <p>--</p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="56"
-              height="56"
-              fill="currentColor"
-              className="bi bi-arrow-left text-[#445564]"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fillRule="evenodd"
-                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"
-              />
-            </svg>
-          </div>
-            </Station>
+              <p>--</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="56"
+                height="56"
+                fill="currentColor"
+                className="bi bi-arrow-left text-[#445564]"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"
+                />
+              </svg>
+            </div>
+          </Station>
           <div className="h-[136px] w-[120px]"></div>
-          
+
           {/* <div></div> */}
         </div>
       </div>
